@@ -14676,6 +14676,7 @@ with pkgs;
   openjdk16-bootstrap = javaPackages.compiler.openjdk16-bootstrap;
 
   openjdk19 = javaPackages.compiler.openjdk19;
+  openjdk20 = javaPackages.compiler.openjdk20;
   openjdk19_headless = javaPackages.compiler.openjdk19.headless;
   jdk19 = openjdk19;
   jdk19_headless = openjdk19_headless;
