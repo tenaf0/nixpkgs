@@ -15849,7 +15849,7 @@ with pkgs;
 
   hugs = callPackage ../development/interpreters/hugs { };
 
-  inherit (javaPackages) openjfx11 openjfx15 openjfx17 openjfx19;
+  inherit (javaPackages) openjfx11 openjfx15 openjfx17 openjfx19 openjfx20;
   openjfx = openjfx17;
 
   openjdk8-bootstrap = javaPackages.compiler.openjdk8-bootstrap;
@@ -15878,6 +15878,11 @@ with pkgs;
   openjdk19_headless = javaPackages.compiler.openjdk19.headless;
   jdk19 = openjdk19;
   jdk19_headless = openjdk19_headless;
+
+  openjdk20 = javaPackages.compiler.openjdk20;
+  openjdk20_headless = javaPackages.compiler.openjdk20.headless;
+  jdk20 = openjdk20;
+  jdk20_headless = openjdk20_headless;
 
   /* default JDK */
   jdk = jdk19;
